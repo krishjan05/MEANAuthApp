@@ -1,0 +1,23 @@
+{
+  "name": "meanauthapp",
+  "version": "1.0.0",
+  "description": "MEAN auth application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishjan05/MEANAuthApp.git"
+  },
+  "author": "Krishna Kanhaiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krishjan05/MEANAuthApp/issues"
+  },
+  "homepage": "https://github.com/krishjan05/MEANAuthApp#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.8.2"
+  }
+}
