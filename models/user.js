@@ -48,3 +48,11 @@ module.exports.addUser = (newUser, callback) => {
 		});
 	});
 };
+
+//Comparing Password with hashed password
+module.exports.comparePassword = (candiatePassword, hash, callback)=> {
+	bcrypt.compare(candiatePassword, hash, (err, isMatch) => {
+		if(err) throw err;
+		callback(null, isMatch);
+	});
+};

@@ -24,11 +24,17 @@ const users = require('./routes/users');
 
 const port = 3000;
 
-
+//CORS Middleware
 app.use(cors());
 
 //Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
+
+//Passport Middleware
+app.use(passport.initialize());
+app.use(passport.session());
+
+require('./config/passport')(passport);
 
 //Body Parser Middleware
 app.use(bodyParser.json());
