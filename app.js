@@ -20,6 +20,8 @@ mongoose.connection.on('error', (err) => {
 });
 
 const app = express();
+app.use(bodyParser.json());
+
 const users = require('./routes/users');
 
 const port = 3000;
@@ -37,7 +39,6 @@ app.use(passport.session());
 require('./config/passport')(passport);
 
 //Body Parser Middleware
-app.use(bodyParser.json());
 app.use('/users', users);
 
 //Index route
